@@ -34,7 +34,17 @@
 
 <script>
     export default {
-        name: "HeaderCom"
+        name: "HeaderCom",
+        data(){
+            return{
+
+            }
+        },
+        // setup(){
+        //     const a=1
+        //     return a;
+        // }
+
     }
 </script>
 
