@@ -6,7 +6,7 @@ const ProfileView = () => import ('../views/ProfileView')
 const RadioView = () => import('../views/RadioView')
 const SearchView = () => import('../views/SearchView')
 const YunCunView = () => import('../views/YunCunView')
-
+const ListView=()=>import('../views/ListView')
 
 const routes = [
     {
@@ -38,6 +38,11 @@ const routes = [
         path: '/yun-cun',
         name: 'yunCun',
         component: YunCunView
+    },
+    {
+        path: '/list-view',
+        name:'ListView',
+        component: ListView,
     },
 ]
 

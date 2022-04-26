@@ -31,16 +31,24 @@
         created() {
             //    创建之后向后台要数据，imgs[]为空数组
             this.getBannerImgs()
+            /*
+            * data里默认为空数据
+            * created时候，向后台要数据，更新data
+            * 更新完data之后，用新数据渲染页面（vue实力做的）
+            * 检测到数据被修改后，updated里，操作DOM
+            * */
         },
-        mounted() {
+        updated() {//数据修改
             //以下代码要操作DOM
             /*created,项目创建后
             mounted,挂载之后（Vue实例挂载到真实dom对象上）,当vue实例挂载dom之后，在实例中才有真实dom存在
             */
             const mySwiper = new Swiper('.swiper-home', {//引号里面，可以用id名，class名皆可，只要能找到对应的container就行
                 loop: true,
-                autoplay: true,
-                deplay:1000
+                autoplay: {
+                    delay: 1000
+                },
+
             })
 
         },
