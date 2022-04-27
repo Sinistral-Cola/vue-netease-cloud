@@ -20,6 +20,7 @@
         <router-link to="/">发现</router-link>
         <router-link to="/yun-cun">云村</router-link>
         <router-link to="/radio">视频</router-link>
+<!--            radio 文件名应为Video-->
         </div>
         <router-link to="/search">
             <svg t="1650613108092" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"

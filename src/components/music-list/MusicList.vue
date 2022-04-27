@@ -6,13 +6,13 @@
     <div class="swiper-container swiper-music-list">
         <div class="swiper-wrapper">
             <div class="swiper-slide" v-for="item in musicList">
-                <router-link :to="{path:'/list-view',query:{id:item.id}}">
+                <router-link :to="{path:'/list-view',query:{id:item.id,picture:item.picUrl}}">
 <!--                 1.通过路由，向下一个组件传参数-->
                     <img :src="item.picUrl" alt="">
                     <span v-if="item.playCount<100000000">{{(item.playCount/100000).toFixed(1)+'万'}}</span>
                 <!--二：判断过亿-->
                 <span v-else>{{(item.playCount/100000000).toFixed(1)+'亿'}}</span>
-                    <p>{{item.name}}</p>
+                    <p id="ListName">{{item.name}}</p>
                 </router-link>
 <!--          计算属性      <p v-for="item in  newplayCountdata">{{item.playCount+'万'}}</p>-->
             </div>
@@ -109,4 +109,14 @@
             margin: 0;
         }
     }
+
+    #ListName{
+        text-decoration:black;
+        color: black
+    }
+    router-link-active{
+        text-decoration:none;
+
+    }
+
 </style>

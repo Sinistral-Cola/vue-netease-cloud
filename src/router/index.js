@@ -1,9 +1,10 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
+
 import HomeView from '../views/HomeView.vue'
 
 const LoginView = () => import ('../views/LoginView')
 const ProfileView = () => import ('../views/ProfileView')
-const RadioView = () => import('../views/RadioView')
+const RadioView = () => import('../views/RadeoView')
 const SearchView = () => import('../views/SearchView')
 const YunCunView = () => import('../views/YunCunView')
 const ListView=()=>import('../views/ListView')
