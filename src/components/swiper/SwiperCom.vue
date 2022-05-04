@@ -45,6 +45,7 @@
             */
             const mySwiper = new Swiper('.swiper-home', {//引号里面，可以用id名，class名皆可，只要能找到对应的container就行
                 loop: true,
+                loopAdditionalSlides: 6,
                 autoplay: {
                     delay: 1000
                 },

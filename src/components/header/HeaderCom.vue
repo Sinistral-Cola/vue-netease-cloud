@@ -30,7 +30,7 @@
             </svg>
         </router-link>
     </nav>
-
+    <div class="gap"></div>
 </template>
 
 <script>
@@ -53,6 +53,7 @@
 nav{
     display: flex;justify-content: space-between;
     margin-bottom: 10px;
+    position: fixed;top: 10px;left: 0;z-index: 2;
 div{
     display: flex;justify-content: space-around;
     width: 200px;
@@ -65,5 +66,8 @@ div{
 }
 .router-link-active{
     font-weight:bold ;
+}
+.gap{
+    height: 30px;
 }
 </style>
